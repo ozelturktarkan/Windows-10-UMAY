@@ -21,7 +21,7 @@ Yalnız XML bütün UMAY profilini üretmez. Hedef aynı yapılandırmayı üret
 | ISO boyutu | 2.615.805.952 bayt, yaklaşık 2,44 GiB |
 | Doğrulanan ortam | VirtualBox 7.2.20, BIOS, 1 vCPU, 1.024 MiB RAM |
 
-**UMAY ISO indirme bağlantısı henüz yayımlanmadı.** ISO, proje sahibi tarafından ayrıca yüklenecek. Bu Git deposu yalnız küçük kaynak ve belge dosyalarını içerir. Aşağıdaki kaynak arşivi bağlantısı UMAY'ın indirme bağlantısı değildir.
+**UMAY ISO arşiv sayfası:** [Windows 10 UMAY — Internet Archive](https://archive.org/details/windows-10-umay). **Yükleme bekleniyor:** 30 Eylül 2026 tarihindeki kontrolde arşiv henüz dosya listesi döndürmedi; ISO'nun erişilebilirliği ve arşiv tarafından hesaplanan özetlerin eşleşmesi doğrulanmadı. Bu Git deposu yalnız küçük kaynak ve belge dosyalarını içerir. Aşağıdaki başlangıç kaynağı bağlantısı UMAY'ın indirme bağlantısı değildir.
 
 ISO, makineye özel kullanıcı hesabı, parola, ürün anahtarı veya Guest Additions içermez. Disk seçimi ve kullanıcı oluşturma kuran kişiye bırakılır. BIOS ve x86 EFI önyükleme girdileri bulunur; çalışma testi BIOS üzerinde yapılmıştır. “Genel kurulum imajı” ifadesi bütün donanım ve hipervizörlerde başarı garantisi değildir.
 
