@@ -1,0 +1,17 @@
+*.iso
+*.wim
+*.esd
+*.swm
+*.vdi
+*.vhd
+*.vhdx
+*.vmdk
+*.hiv
+*.log
+*.zip
+*.exe
+*.dll
+Private/
+private/
+__pycache__/
+.venv/

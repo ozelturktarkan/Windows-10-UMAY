@@ -1,0 +1,30 @@
+{
+  "source_name": "Win10_1607_Turkish_x32",
+  "ntlite_version": "2026.09.11904.0",
+  "ntlite_sha256": "01db1c1c757a14b5fc7f436a73ace0266a6c750f9b56670cd28c5de6e10c742a",
+  "selected_index": 1,
+  "prepared_wim_sha256": "2ca48d23c7147965ef0bdbe3c5e04f2eb4c734373a5ee696c80f6435a32856a4",
+  "iso_sha256": "d42362e43ee347e84e5e44930abdaa2db0e3b0f1238f892b986bf28615432440",
+  "iso_bytes": 2615805952,
+  "python": "3.12",
+  "pycdlib": "1.14.0",
+  "clean_source_sha256": {
+    "sources/boot.wim": "8df21aaca9d68a1fbec1ad23069fda94eab4b83cbc9ce8e80b7feb68dfa486c2",
+    "sources/install.wim": "9422345a554c2f36348efda09f8eac566287a6d23cc0b7f17bfcc621e10d922b",
+    "sources/sxs/microsoft-windows-netfx3-ondemand-package.cab": "4748e39db798f7e8aa38e8d08073dcf64ed8f05a03c606b54f73b06ef33fa9cb"
+  },
+  "source_download": {
+    "metadata_url": "https://archive.org/metadata/win10-1607",
+    "download_directory": "https://archive.org/download/win10-1607",
+    "checked_utc": "2026-09-30T02:06:21.9549905Z",
+    "filename": "Win10_1607_Turkish_x32.iso",
+    "bytes": 2971324416,
+    "md5": "e66d3a61ae5881d450208617b6641a29",
+    "sha1": "b7b35f4ea3876ac46723725f0dcdce93563a8457",
+    "provenance": "Archive.org metadata, not an independent Microsoft authenticity verification",
+    "local_original_iso_full_hash_verified": false
+  },
+  "original_media_install_wim_sha256": "4d9c883417bb1ceeb3102a0f716c38693133d285a04ac4c5be8d86eaffe546c8",
+  "home_index_in_original_media": 2,
+  "home_only_export_note": "The clean_source_sha256 install.wim entry describes the single-Home export before debloating, not the untouched multi-edition source WIM. Export hashes can differ across runs."
+}

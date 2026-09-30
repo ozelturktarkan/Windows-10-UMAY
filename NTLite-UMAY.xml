@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Preset xmlns="urn:schemas-nliteos-com:pn.v1">
+  <Version>1.1</Version>
+  <ImageInfo>
+    <Version mode="offline">Windows 10 Home 1607 x86 - 10.0.14393.0 (tr-TR)</Version>
+  </ImageInfo>
+  <RemoveComponents AppRemovalMode="DISM">
+    <c>hwsupport_fax 'Faks'</c>
+    <c>hwsupport_internetprintingclient 'İnternet Yazdırma İstemcisi'</c>
+    <c>hwsupport_printer 'Yazdırma'</c>
+    <c>microsoft.3dbuilder '3D Builder'</c>
+    <c>microsoft.bingweather 'MSN Weather'</c>
+    <c>microsoft.getstarted 'İpuçları (Başlarken)'</c>
+    <c>microsoft.messaging 'Microsoft Messaging'</c>
+    <c>microsoft.microsoftofficehub 'Get Office'</c>
+    <c>microsoft.microsoftsolitairecollection 'Microsoft Solitaire Collection'</c>
+    <c>microsoft.microsoftstickynotes 'Microsoft Sticky Notes'</c>
+    <c>microsoft.office.onenote 'OneNote'</c>
+    <c>microsoft.skypeapp 'Skype Preview'</c>
+    <c>microsoft.storepurchaseapp 'Store Purchase App'</c>
+    <c>microsoft.windows.photos 'Microsoft Photos'</c>
+    <c>microsoft.windows.sechealthui 'Windows Defender'</c>
+    <c>microsoft.windowsalarms 'Windows Alarms &amp; Clock'</c>
+    <c>microsoft.windowscalculator 'Windows Calculator'</c>
+    <c>microsoft.windowscamera 'Windows Camera'</c>
+    <c>microsoft.windowscommunicationsapps 'Mail and Calendar'</c>
+    <c>microsoft.windowsfeedbackhub 'Feedback Hub'</c>
+    <c>microsoft.windowsmaps 'Windows Maps'</c>
+    <c>microsoft.windowssoundrecorder 'Windows Voice Recorder'</c>
+    <c>microsoft.windowsstore 'Microsoft Store'</c>
+    <c>microsoft.xboxapp 'Xbox'</c>
+    <c>microsoft.xboxgamecallableui 'Xbox Game UI'</c>
+    <c>microsoft.xboxidentityprovider 'Xbox Identity Provider'</c>
+    <c>microsoft.zunemusic 'Groove Music'</c>
+    <c>microsoft.zunevideo 'Movies &amp; TV'</c>
+    <c>onedrive</c>
+    <c>paint</c>
+    <c>printtopdf 'PDF'ye Yazdır'</c>
+    <c>retaildemo 'Perakende Demo İçeriği'</c>
+    <c>screensavers 'Ekran Koruyucuları'</c>
+    <c>windows.contactsupport 'Destek Birimiyle İletişim'</c>
+    <c>wordpad</c>
+  </RemoveComponents>
+  <Compatibility>
+    <ComponentFeatures>
+      <Feature enabled="yes">OOBE</Feature>
+      <Feature enabled="yes">AppxSupport</Feature>
+      <Feature enabled="yes">ServicingStack</Feature>
+      <Feature enabled="yes">DefaultFonts</Feature>
+      <Feature enabled="yes">USB</Feature>
+      <Feature enabled="yes">Activation</Feature>
+      <Feature enabled="yes">WFC</Feature>
+      <Feature enabled="yes">WinSetup</Feature>
+      <Feature enabled="yes">Recommended-All</Feature>
+      <Feature enabled="yes">ShellSearchSupport</Feature>
+      <Feature enabled="no">WindowsStore</Feature>
+      <Feature enabled="no">Printing</Feature>
+      <Feature enabled="no">Recommended-Tablet</Feature>
+    </ComponentFeatures>
+    <MachineDrivers>
+      <Machine enabled="no">HostMachine</Machine>
+      <Machine enabled="no">Hyper-V VM</Machine>
+      <Machine enabled="no">Parallels VM</Machine>
+      <Machine enabled="yes">Virtual Box VM</Machine>
+      <Machine enabled="no">VMware VM</Machine>
+    </MachineDrivers>
+  </Compatibility>
+  <Packages />
+  <Tweaks />
+  <ApplyOptions>
+    <ImageTasks>
+      <Task>imageFormatWim</Task>
+    </ImageTasks>
+  </ApplyOptions>
+</Preset>

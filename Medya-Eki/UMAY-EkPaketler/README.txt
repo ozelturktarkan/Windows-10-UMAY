@@ -1,0 +1,1 @@
+Ek paket yoktur. Otomatik internet indirmesi yapilmaz. packages.json kayitlari: name, file (yalniz dosya adi), arch=x86, windows_build=14393, sha256. Microsoft imzasi zorunludur. Uygulamanin ihtiyacina uygun surumu belirleyip uyumlulugunu test etmeden paket eklemeyin.

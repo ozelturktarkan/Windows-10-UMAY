@@ -1,0 +1,22 @@
+{
+  "name": "Windows 10 UMAY",
+  "revision": "r5",
+  "base": "Windows 10 Home 1607 x86 Turkish",
+  "build": "14393.0",
+  "source": "Original installation media modified with documented NTLite preset; not a capture of the test VM",
+  "visual_enabled": [
+    "Font smoothing (ClearType)",
+    "Desktop icon label shadows",
+    "Selection fade",
+    "Window drop shadows"
+  ],
+  "tested_ram_mib": 1024,
+  "universal_scope": "Generic x86 installation without baked-in machine SID, user account, activation, guest additions or VM hardware settings. Firmware/drivers must support x86 Windows 1607.",
+  "limits": [
+    "VM/test use",
+    "Not all hypervisors/hardware tested",
+    "512/768 MiB not validated",
+    "Full Cortana/Game DVR binary removal not claimed",
+    "Windows 10 1607 Home security support ended; not a secure daily-use distribution"
+  ]
+}

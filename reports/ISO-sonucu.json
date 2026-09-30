@@ -1,0 +1,31 @@
+{
+  "name": "Windows 10 UMAY",
+  "iso": "Windows 10 UMAY.iso",
+  "bytes": 2615805952,
+  "sha256": "d42362e43ee347e84e5e44930abdaa2db0e3b0f1238f892b986bf28615432440",
+  "source_wim_sha256": "2ca48d23c7147965ef0bdbe3c5e04f2eb4c734373a5ee696c80f6435a32856a4",
+  "files": 996,
+  "overlay_sha256": {
+    "autounattend.xml": "41ccbb793d47b60a966209faf1293ff5d185a8a7480f3c17c60c13ad9ac3407d",
+    "UMAY-MEDIA.json": "80500cc50b93dfc9a96fd446fcc8dcad140d52ff62d84fa9abf36da6b78dda85",
+    "UMAY-EkPaketler/packages.json": "16bdbd83d919dde99f2846a6a189a11276dd97e59171c9ac5dfcd616c0c151ff",
+    "UMAY-EkPaketler/README.txt": "efa73ae761deffb74b0a39ae87a2ba7dfff1f55828a4f956f32c6b547401c104",
+    "sources/$OEM$/$$/Setup/UMAY/Apply-Machine.ps1": "de5b418855b87209be541d47a20e93546fbbf9c3887b5c23ac0d0c227b603782",
+    "sources/$OEM$/$$/Setup/UMAY/Initialize-User.ps1": "ca5c35f298aefa93acc1076db4dd687fec4df5ed3c3a6a9a8d7ffed87f7eed9d",
+    "sources/$OEM$/$$/Setup/UMAY/Set-VisualEffects.ps1": "c9b4b4d01e659af81313c1cc1df295218688f65d12654402d2ade785363654a4",
+    "sources/$OEM$/$1/UMAY/Bilesen-Merkezi.ps1": "1b763110a9e5346fa40b2776e7f4fa1196c70032b8188a7153c144b3d601103e",
+    "sources/$OEM$/$1/UMAY/Paketler.json": "73b439053fa23033dcf7e6bb2cec420f5606648b15c9deb55928e06b0935de18",
+    "sources/$OEM$/$1/UMAY/UMAY-Baslat-Duzenle.ps1": "d4f3b0b6e64f6d5bfa708ed113766bf19011c77e2aa17e4417534c35069edee6",
+    "sources/$OEM$/$1/UMAY/UMAY-Bilesenleri.bat": "4f386d6f1acdf902fc8e4729965b075aa1a1243a5c49ca239497b898103ad050",
+    "sources/$OEM$/$1/Users/Default/AppData/Local/Microsoft/Windows/Shell/LayoutModification.xml": "f290f10888e01c3fd2dfaf4c7b1005ed4478d311051bff20ef6689a1cfd3e352"
+  },
+  "excluded_build_logs": [
+    "NTLite.log",
+    "Otomatik Kaydedildi 3cf8c2c9.xml"
+  ],
+  "boot_catalog": "BIOS and x86 EFI",
+  "not_vm_capture": true,
+  "fresh_install_test": "passed",
+  "second_standard_account_test": "passed",
+  "test_report": "reports/TEST-SONUCU.json"
+}

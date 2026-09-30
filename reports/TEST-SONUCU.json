@@ -1,0 +1,175 @@
+{
+  "name": "Windows 10 UMAY",
+  "revision": "r5",
+  "date": "2026-09-30",
+  "iso_sha256": "d42362e43ee347e84e5e44930abdaa2db0e3b0f1238f892b986bf28615432440",
+  "environment": {
+    "hypervisor": "Oracle VirtualBox 7.2.20",
+    "firmware": "BIOS",
+    "vcpus": 1,
+    "memory_mib": 1024,
+    "guest_os": "Windows 10 Home 1607 x86 tr-TR 14393.0",
+    "network_cable_connected": false
+  },
+  "fresh_install": {
+    "passed": true,
+    "method": "Fresh empty virtual disk using production ISO with a separate test-only answer file for disk/account automation. Production specialize and first-logon scripts retained unchanged. Guest Additions installed only in test VM, not in release ISO.",
+    "first_account": {
+      "User": "umaytest",
+      "Complete": true,
+      "Checks": {
+        "OS": true,
+        "AutomaticFirstLogon": true,
+        "Profile": true,
+        "Release": true,
+        "VisualEffects": true,
+        "SearchIconHidden": true,
+        "SearchUIRenamed": true,
+        "DiagTrack": true,
+        "SSDPSRV": true,
+        "OneSyncSvc": true,
+        "WSearchPreserved": true,
+        "wuauservPreserved": true,
+        "BITSPreserved": true,
+        "TrustedInstallerPreserved": true,
+        "Firewall": true,
+        "NoAutoUpdate": true,
+        "MenuPresent": true,
+        "ComponentMenu": true,
+        "Explorer": true,
+        "Shell": true,
+        "NoDiagnosticLoad": true,
+        "NoPackagedDiagnostics": true,
+        "StartClean": true,
+        "Turkish": true
+      },
+      "Errors": [],
+      "Visual": {
+        "Revision": "r5",
+        "User": "umaytest",
+        "Passed": true,
+        "Checks": {
+          "TooltipAnimation": true,
+          "TooltipFade": true,
+          "ComboBoxAnimation": true,
+          "ClientAreaAnimation": true,
+          "CursorShadow": true,
+          "ListBoxSmoothScrolling": true,
+          "SelectionFade": true,
+          "MenuAnimation": true,
+          "MenuFade": true,
+          "DropShadow": true,
+          "FontSmoothing": true,
+          "FontSmoothingType": true,
+          "DragFullWindows": true,
+          "MinAnimation": true,
+          "VisualFXSetting": true,
+          "TaskbarAnimations": true,
+          "ListviewShadow": true,
+          "ListviewAlphaSelect": true,
+          "IconsOnly": true,
+          "AlwaysHibernateThumbnails": true,
+          "EnableAeroPeek": true,
+          "EnableTransparency": true
+        }
+      },
+      "Start": {
+        "Tiles": 1,
+        "SecondaryTiles": 0,
+        "Apps": [
+          "Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+        ]
+      }
+    }
+  },
+  "second_standard_account": {
+    "passed": true,
+    "method": "A second standard account was created by test-only machine provisioning. UAC was temporarily changed in the private disconnected VM to prepare the account, restored, and rebooted before the standard-user test; the checker verifies restored UAC and a non-administrator token. Its new profile automatically inherited the production Default user RunOnce. The checker observed API values and did not apply or repair visual settings.",
+    "report": {
+      "User": "umaysecond",
+      "Complete": true,
+      "Checks": {
+        "UACRestored": true,
+        "StandardAccount": true,
+        "OS": true,
+        "AutomaticFirstLogon": true,
+        "Profile": true,
+        "Release": true,
+        "VisualEffects": true,
+        "SearchIconHidden": true,
+        "SearchUIRenamed": true,
+        "DiagTrack": true,
+        "SSDPSRV": true,
+        "OneSyncSvc": true,
+        "WSearchPreserved": true,
+        "wuauservPreserved": true,
+        "BITSPreserved": true,
+        "TrustedInstallerPreserved": true,
+        "Firewall": true,
+        "NoAutoUpdate": true,
+        "MenuPresent": true,
+        "ComponentMenu": true,
+        "Explorer": true,
+        "Shell": true,
+        "NoDiagnosticLoad": true,
+        "NoPackagedDiagnostics": true,
+        "StartClean": true,
+        "Turkish": true
+      },
+      "Errors": [],
+      "Visual": {
+        "Revision": "r5",
+        "User": "umaysecond",
+        "Passed": true,
+        "Checks": {
+          "TooltipAnimation": true,
+          "TooltipFade": true,
+          "ComboBoxAnimation": true,
+          "ClientAreaAnimation": true,
+          "CursorShadow": true,
+          "ListBoxSmoothScrolling": true,
+          "SelectionFade": true,
+          "MenuAnimation": true,
+          "MenuFade": true,
+          "DropShadow": true,
+          "FontSmoothing": true,
+          "FontSmoothingType": true,
+          "DragFullWindows": true,
+          "MinAnimation": true,
+          "VisualFXSetting": true,
+          "TaskbarAnimations": true,
+          "ListviewShadow": true,
+          "ListviewAlphaSelect": true,
+          "IconsOnly": true,
+          "AlwaysHibernateThumbnails": true,
+          "EnableAeroPeek": true,
+          "EnableTransparency": true
+        }
+      },
+      "Start": {
+        "Tiles": 1,
+        "SecondaryTiles": 0,
+        "Apps": [
+          "Microsoft.MicrosoftEdge_8wekyb3d8bbwe!MicrosoftEdge"
+        ]
+      }
+    }
+  },
+  "content_verification": {
+    "iso_wim_hash_matches_prepared_wim": true,
+    "wim_bytes": 2177800226,
+    "bios_boot_entry": true,
+    "x86_efi_boot_entry": true,
+    "netfx3_source_present": true,
+    "production_answer_no_accounts_keys_or_disk_wipe": true,
+    "diagnostic_payload_absent": true
+  },
+  "limitations": [
+    "BIOS fresh installation tested; x86 EFI boot entry present but EFI installation not runtime tested.",
+    "Manual OOBE choices were replaced only in private test answer; full manual production-answer walkthrough not repeated.",
+    "No 512/768 MiB validation or broad application compatibility claim.",
+    "Long idle/load measurements belong to preceding UMAY profile; final r5 change is visual user defaults.",
+    "Second-account tests use private account automation, not production credentials."
+  ],
+  "check_semantics": "true means actual value matched the expected profile; it does not mean the named animation is enabled."
+}
