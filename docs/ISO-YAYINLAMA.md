@@ -1,11 +1,29 @@
-# ISO indirme ve yükleme durumu
+# ISO yayını
 
-Bu depoda ISO yoktur. Proje sahibi `Windows 10 UMAY.iso` dosyasını [Windows 10 UMAY — Internet Archive](https://archive.org/details/windows-10-umay) adresine yüklemektedir. Dosyanın boyutu 2.615.805.952 bayttır. Yayımlanacak dosyayı [kayıtlı özetlerle](../checksums/ISO-hashes.json) karşılaştırın; dosya değişirse önce yeni özetleri hesaplayıp sürüm kaydını güncelleyin.
+`Windows 10 UMAY.iso` Internet Archive üzerinde yayımlandı. Bu Git deposunda ISO bulunmaz.
 
-**Durum — 30 Eylül 2026:** [Arşiv metadata API'si](https://archive.org/metadata/windows-10-umay) henüz dosya listesi döndürmedi. Bağlantı yükleme hedefidir; tamamlanmış veya hash eşleşmesi doğrulanmış indirme olarak sunulmaz. Yerel ISO'nun özetleri hesaplanmış durumdadır; arşivdeki kopyanın doğrulaması ayrı bir adımdır.
+- [ISO'yu indir — yaklaşık 2,44 GiB](https://archive.org/download/windows-10-umay/Windows%2010%20UMAY.iso)
+- [Arşiv sayfası](https://archive.org/details/windows-10-umay)
+- [Kayıtlı ISO özetleri](../checksums/ISO-hashes.json)
 
-Yükleme tamamlandığında dosya adını, bayt boyutunu ve arşivin hesapladığı MD5/SHA-1 değerlerini kayıtlı özetlerle karşılaştırın. Elle girilen açıklama/metadata hash alanları, arşivin dosyadan hesapladığı özetlerin yerine geçmez. İndirenler dosyanın tamamı üzerinden SHA-256 hesaplayarak README'deki değerle karşılaştırabilir. Kontrolün sonucunu README ve sürüm kaydına işleyin; başlangıç Windows arşivini UMAY indirmesiyle karıştırmayın.
+## Yükleme doğrulaması — 30 Eylül 2026
 
-[GitHub Releases](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases) tek dosya için **2 GiB altında** boyut ister. Bu ISO yaklaşık 2,44 GiB olduğu için tek dosya halinde Release eki olamaz. ISO'yu uygun başka bir barındırmada yayımlayıp GitHub'dan bağlantı verebilirsiniz. Bölünmüş arşiv kullanılırsa parçaların ve birleştirilmiş ISO'nun özetlerini ayrı kaydedin; mevcut ISO özeti yalnız birleştirilmiş ISO'ya aittir.
+[Arşiv metadata API'sinin](https://archive.org/metadata/windows-10-umay) `files[]` listesindeki ISO kaydı, yerel yayın kaydıyla karşılaştırıldı:
 
-GitHub'ın Code → Download ZIP seçeneği bu depodaki küçük kaynakları indirir; Windows kurulum ISO'sunu içermez.
+| Alan | Arşivdeki değer | Sonuç |
+|---|---|---|
+| Boyut | 2.615.805.952 bayt | Eşleşti |
+| MD5 | `b3a13385ce44a4b35cf4066520248c17` | Eşleşti |
+| SHA-1 | `7f58f37d1b1df89775940649c00ed273ed28fe71` | Eşleşti |
+
+Doğrudan indirme adresine HTTP HEAD isteği 200 ve beklenen Content-Length değerini döndürdü. Bu kontrol açıklamaya elle girilen hash alanlarını değil, arşivin dosya listesindeki özetleri kullanır. [Makine tarafından okunabilir kontrol kaydı](../reports/ARCHIVE-DOGRULAMA.json).
+
+ISO'nun tamamı bu kontrolde yeniden indirilmedi. Arşivin dosya kaydında SHA-256 bulunmadığından uzak kopyanın SHA-256'sı bağımsız olarak hesaplanmış sayılmaz. İndirenler aşağıdaki komutla kendi kopyalarını denetleyebilir:
+
+```powershell
+Get-FileHash -LiteralPath '.\Windows 10 UMAY.iso' -Algorithm SHA256
+```
+
+Beklenen SHA-256: `d42362e43ee347e84e5e44930abdaa2db0e3b0f1238f892b986bf28615432440`.
+
+Bu belge güncellemesi r5 ISO'sunu, NTLite XML'ini veya üretim betiklerini değiştirmez. Başlangıç Windows arşivi ile UMAY indirmesi ayrı kaynaklardır; hash eşleşmesi bir güvenlik sertifikası değildir.

@@ -1,0 +1,18 @@
+{
+  "checked_at_utc": "2026-09-30T06:06:43.214639+00:00",
+  "archive_page": "https://archive.org/details/windows-10-umay",
+  "download_url": "https://archive.org/download/windows-10-umay/Windows%2010%20UMAY.iso",
+  "metadata_url": "https://archive.org/metadata/windows-10-umay",
+  "filename": "Windows 10 UMAY.iso",
+  "bytes": 2615805952,
+  "archive_file_md5": "b3a13385ce44a4b35cf4066520248c17",
+  "archive_file_sha1": "7f58f37d1b1df89775940649c00ed273ed28fe71",
+  "size_md5_sha1_match_local_release": true,
+  "http_head_status": 200,
+  "http_content_length": 2615805952,
+  "verification_method": "Compared the Archive files[] entry (not user-entered item metadata) with the recorded local ISO hashes and checked the public download with HTTP HEAD.",
+  "full_remote_iso_downloaded": false,
+  "archive_file_sha256_available": false,
+  "sha256_recomputed_from_remote_download": false,
+  "local_release_sha256": "d42362e43ee347e84e5e44930abdaa2db0e3b0f1238f892b986bf28615432440"
+}

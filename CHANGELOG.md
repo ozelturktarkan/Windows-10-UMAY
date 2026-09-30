@@ -8,6 +8,6 @@
 - Boş diske otomatik kurulum ve yeni standart kullanıcı doğrulaması geçti.
 - ISO/WIM ve medya eki bütünlüğü doğrulandı.
 - GitHub yayını için XML, yardımcı betikler, üretim tarifi, kaynak bilgisi ve MD5/SHA-1/SHA-256 özetleri belgelendi.
-- ISO dosyası bu depoya eklenmedi. Internet Archive yükleme hedefi belgelendi; dosyanın arşivde erişilebilirliği ve arşiv özetlerinin eşleşmesi henüz doğrulanmadı. Bu belge güncellemesi r5 ISO'sunu veya özetlerini değiştirmez.
+- ISO dosyası GitHub deposuna eklenmedi; Internet Archive üzerinde yayımlandı. 30 Eylül 2026 kontrolünde dosya boyutu, MD5 ve SHA-1 yayın kayıtlarıyla eşleşti; indirme adresi erişilebilir. README, sürüm kaydı ve yayın notlarına indirme bağlantısı eklendi. ISO ve mevcut hash değerleri değişmedi.
 
 Test ve yeniden üretim sınırları README ile ilgili raporlarda ayrıca belirtilir. Bu kayıt sınırsız donanım uyumluluğu veya uzun dönem kararlılık iddiası değildir.

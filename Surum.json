@@ -18,5 +18,11 @@
     "512/768 MiB not validated",
     "Full Cortana/Game DVR binary removal not claimed",
     "Windows 10 1607 Home security support ended; not a secure daily-use distribution"
-  ]
+  ],
+  "download": {
+    "archive_page": "https://archive.org/details/windows-10-umay",
+    "iso_url": "https://archive.org/download/windows-10-umay/Windows%2010%20UMAY.iso",
+    "status": "available",
+    "verification": "reports/ARCHIVE-DOGRULAMA.json"
+  }
 }
