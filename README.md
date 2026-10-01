@@ -1,5 +1,7 @@
 # Windows 10 UMAY
 
+> **Tüm diziyi keşfedin:** Windows 10 ve Windows 11 profillerini, donanım hedeflerini ve yayın durumlarını birlikte görmek için [Windows 10/11 HAKANLAR Dizesi ana reposunu ziyaret edin](https://github.com/ozelturktarkan/Windows-10-11-HAKANLAR-Dizesi).
+
 **Türkçe Windows 10 Home 1607 · 32 bit · Sanal bilgisayarlar ve yazılım denemeleri için**
 
 UMAY, hazır bir Windows imajında nelerin değiştirildiğini görebilmek ve kendi imajını aynı tarifle hazırlayabilmek isteyenler için doğdu. Bu depoda kullandığımız NTLite XML'i, eklediğimiz betikler, üretim adımları, ISO özetleri ve test sonuçları bulunuyor. Amacımız güveni bir söze dayandırmak yerine yaptığımız değişiklikleri incelemeye açmak.
